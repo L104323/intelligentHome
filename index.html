@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<!--视口变迁：禁止浏览器伸缩（禁止缩放，防止在web与移动端看到的大小不一样，移动端优先）-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>智能家居</title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.js" ></script>
+		<script type="text/javascript" src="js/index.js" ></script>
+	</head>
+	<body>
+		<!--导航条-->
+		<nav class="navbar navbar-inverse navbar-fixed-top one">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header change">
+		      <button type="button" class="navbar-toggle collapsed " id="moreBtn" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand brandBox" id="brang1" href="#"><img src="img/logo.png" class="img-responsive"></a>
+		    </div>
+		    <div class="collapse navbar-collapse navbar-right hid" id="bs-example-navbar-collapse-1">
+		   	  <a class="navbar-brand brandBox" href="#" id="brang2"><img src="img/logo.png" class="img-responsive"></a>
+		      <ul class="nav navbar-nav own" id="navUl">
+		        <li><a href="index.html" class="hoverColor">首页 <span class="sr-only">(current)</span></a></li>
+		        <li><a href="#" id="hoverColor">智能设备</a></li>
+		        <li><a href="#" class="aboutLi">关于我们</a></li>
+		        <li><a href="#" class="caseLi">案例欣赏</a></li>
+		        <li><a href="#" class="produceLi">产品代理</a></li>
+		        <li><a href="#" class="newLi">新闻资讯</a></li>
+		        <li><a href="#" class="filmLi">智能影院</a></li>
+		        <li><a href="#" class="contactLi">联系我们</a></li>
+		        <li>
+		        	<a id="allMore">		
+		        		<div id="moreOne">
+			        		<span>- ——</span>
+			        		<br />
+			        		<span>——</span>
+		        		</div>	
+		        		<div id="close" >
+		        			<span >x</span>
+		        		</div>
+		        	</a>
+		        </li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+		<!--more-->
+		<div class="navSecond">
+			<div class="navBoxL">
+				<div class="box01">
+					<div class="box01Content">
+						<div id="box010Content">
+							<p><a href="html/controlSys.html">中央控制系统</a></p>
+							<p><a href="html/controlSys.html">中央控制系统</a></p>
+							<p><a href="html/controlSys.html">中央控制系统</a></p>
+							<p><a href="html/controlSys.html">中央控制系统</a></p>
+							<p><a href="html/controlSys.html">......</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="box02">
+					<img src="img/we.jpg" />
+					<a href="html/produce.html">走进我们</a>
+				</div>
+				<div class="box03">
+					<div class="box030">
+						<div class="box030Content">
+							<p>————— CASE</p>
+							<a href="#">
+								<span class="caseFont">案例展示</span>
+								<br />
+								<span class="caseFont">以智能创新设计为驱动力</span>
+								<p><i id="caseIcon" class="glyphicon glyphicon-arrow-right"></i></p>
+							</a>
+						</div>						
+					</div>
+				</div>
+				<div class="box04">
+					<div class="box04Content">
+						<div id="box04Content0">
+							<p>智能彰显艺术</p>
+							<p>Intelligent Display Art</p>
+							<p>创新驱动生活</p>
+							<p>Creativity Drives Life</p>
+						</div>
+					</div>
+				</div>
+			</div>		
+			<div class="navBox">
+				<div class="box">
+					<ul class="nav" >
+						<li ><a href="index.html" id="navBoxUl">网站首页</a></li>
+						<li><a href="html/produce.html">关于我们</a></li>
+						<li><a href="html/controlSys.html">智能系统</a></li>
+						<li><a href="html/case.html">项目案例</a></li>
+						<li><a href="html/newsList.html">新闻资讯</a></li>
+						<li><a href="html/newsDetail.html">智能影院</a></li>
+						<li><a href="#">联系我们</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--轮播-->
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="z-index: 2;">
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators">
+		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active" id="img1"></li>
+		    <li data-target="#carousel-example-generic" data-slide-to="1" id="img2"></li>
+		    <!--<li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
+		  </ol>		
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner" role="listbox">
+		    <div class="item active">
+		      <img src="img/lunbo1.jpg" class="img-responsive" alt="Responsive image">
+		      <div class="carousel-caption">
+		      </div>
+		    </div>
+		    <div class="item">
+		      <img src="img/lunbo2.jpg" class="img-responsive" alt="Responsive image">
+		      <div class="carousel-caption">
+		      </div>
+		    </div>
+		  </div>
+		
+		  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev" id="beforeBox">
+			  <div class="before">
+					<i class="glyphicon glyphicon-menu-right icon1"></i>
+					<img src="img/lunbo1.jpg" />
+					<span class="sr-only">Previous</span>
+			  </div>
+		  </a>
+		  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next" id="afterBox">
+			  <div class="after">
+					<i class="glyphicon glyphicon-menu-left icon1"></i>
+					<img src="img/lunbo2.jpg" />
+					<span class="sr-only">Next</span>
+			  </div>
+		  </a>
+		</div>
+
+		<!--控制系统-->
+		<div class="container-fluid control listContent">
+			<div class="container">
+				<div class="row">		
+				    <div class="col-xs-6 col-sm-3 col">
+				    	<a href="html/controlSys.html" title="中央控制系统">
+					  		<div class="colBox">
+					  			<i class="glyphicon glyphicon-blackboard colBoxIcon"></i>
+					  			<h6>中央控制系统</h6>
+					  			<p>项目中选用Crestron和苹果HomeKit智能家居中央控制系统，通过触摸屏、智能面板等对智能家居生活中的灯光照明，电...</p>
+					  			<!--<div class="controlHoverBoxL controlHover"></div>
+					  			<div class="controlHoverBoxR controlHover"></div>-->
+					  		</div>		
+				  		</a>
+				 	</div>
+				    <div class="col-xs-6 col-sm-3 col">
+				    	<a href="html/controlSys.html" title="灯光控制系统">
+						  	<div class="colBox">
+						  		<i class="glyphicon glyphicon-lamp colBoxIcon"></i>
+						  		<h6>灯光控制系统</h6>
+						  		<p>我们可以为每一个环境做不同的灯光控制，使整个区域呈现出符合环境氛围的光线，在不同的场景模式中，利用光学的特性，给环境带来...</p>
+						  	</div>		
+					  	</a>
+				    </div>
+				    <div class="clearfix visible-xs-block"></div>
+				    <div class="col-xs-6 col-sm-3 col">
+				    	<a href="html/controlSys.html" title="环境控制系统">
+						  	<div class="colBox">
+						  		<i class="glyphicon glyphicon-retweet colBoxIcon"></i>
+						  		<h6>环境控制系统</h6>
+						  		<p>随着时代家庭生活水平的不断提高，使家居主人感觉舒适，需要对家居的温度、湿度、光照强度等进行检测，并实现自动控制，已提高家...</p>
+						  	</div>		
+					  	</a>
+				 	</div>
+				    <div class="col-xs-6 col-sm-3 col">
+				    	<a href="html/controlSys.html" title="安防控制系统">
+						  	<div class="colBox">
+						  		<i class="glyphicon glyphicon-adjust colBoxIcon"></i>
+						  		<h6>安防控制系统</h6>
+						  		<p>安防控制系统包括：窗帘检测器、溢水探测器、燃气探测器，分别安装在窗户、容易产生火灾的厨房，当有人闯入或者发生火灾，漏水情...</p>
+						  	</div>		
+					  	</a>
+				 	</div>
+				</div>
+			</div>
+		</div>	
+		<!--视频-->
+		<div class="container-fluid vedio listContent">
+			<div class="container">
+				<div class="row" id="bigSreenVedio">
+				    <div class="col-lg-6  vedioBox">
+				    	<div class="vedioBoxSlider">
+				    		<img src="img/vedio.jpg" />
+					  	    <video src="vedio/vedio.mp4" class="videoPlay" controls="controls"></video>
+					  	    <i class="glyphicon glyphicon-triangle-right videoIcon"></i>
+				    	</div>	    	
+				    </div>
+					<div class="col-lg-6  moreBox">
+						<div class="moreBoxSlider">
+							<div class="introduce">
+								<h4>无限智居智能家居</h4>
+								<p>
+									无限智居智能家居为用户提供功能强大智能系统服务，集成国内外高端智能品牌，全系统集成，
+									能够为任何环境或应用设计最完美的智能化定制方案。智能产品以用途为基础，力求实现各产品
+									在单个系统中协同工作，通过手机、iPad、触摸屏等终端对灯光照明、电动窗帘、安防监控等设备
+									有机融为一体，统一控制，简单、方便、快捷的对各种设备进行控制，带来真正的生活乐趣，更体现
+									拥有者的生活品味和社会地位.
+								</p>
+								<a title="查看更多" href="#">
+									查看更多&nbsp;&nbsp;&nbsp;|&nbsp;
+									<i class="glyphicon glyphicon-arrow-right moreIcon"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--响应，屏幕小于992px时-->
+				<div class="row" id="responseVedio">
+				    <div class="col-lg-12 vedioBox">
+				    	<div class="vedioBoxSlider">
+				    		<img src="img/vedio.jpg" />
+					  	    <video src="vedio/vedio.mp4" class="videoPlay" controls="controls"></video>
+					  	    <i class="glyphicon glyphicon-triangle-right videoIcon"></i>
+				    	</div>	    	
+				    </div>
+					<div class="col-lg-12 moreBox">
+						<div class="moreBoxSlider">
+							<div class="introduce">
+								<h4>无限智居智能家居</h4>
+								<p>
+									无限智居智能家居为用户提供功能强大智能系统服务，集成国内外高端智能品牌，全系统集成，
+									能够为任何环境或应用设计最完美的智能化定制方案。智能产品以用途为基础，力求实现各产品
+									在单个系统中协同工作，通过手机、iPad、触摸屏等终端对灯光照明、电动窗帘、安防监控等设备
+									有机融为一体，统一控制，简单、方便、快捷的对各种设备进行控制，带来真正的生活乐趣，更体现
+									拥有者的生活品味和社会地位.
+								</p>
+								<a title="查看更多" href="html/case.html" >
+									查看更多&nbsp;&nbsp;&nbsp;|&nbsp;
+									<i class="glyphicon glyphicon-arrow-right moreIcon"></i>
+								</a>								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!--案例欣赏-->
+		<div class="container-fluid listContent" id="case">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 caseTitle">
+						<h2>案例欣赏</h2>
+						<p>CASE</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-sm-6 caseHover">
+						<div class="caseBox">
+							<img src="img/case1.jpg" />
+							<a href=" " class="caseContent">
+								<h2 title="智能商业项目">
+									智能商业项目
+								</h2>
+								<p>
+									2019-01-11
+								</p>
+								<p>
+                                	随着互联网、物联网、云计算、大数据、移动终端技术的快速深度融合发展，商业日益变得智慧、高效和便捷。智...
+								</p>
+							</a>
+						</div>
+					</div>
+				 	<div class="col-lg-4 col-sm-6 caseHover">
+				 		<div class="caseBox">
+							<img src="img/case2.jpg" />
+							<a href=" " class="caseContent">
+								<h2 title="智能酒店项目">
+									智能酒店项目
+								</h2>
+								<p>
+									2019-01-11
+								</p>
+								<p title="智能酒店系统以“效率、舒适和节能”为导向，通过整合酒店的照明系统、遮阳系统、影音系统、环境系统，实现系统设备的智能互联和全闭环的智能服务和管理。智慧酒店系统是基于微信平台开发的创新型智慧酒店综合服务管理平台。它包括酒店客户下单、入住、设备智能化交互、客房服务等。更快捷、更便利的入住流程客人无需繁琐的登记入住步骤，一键就可以实现开锁入住。如果需要服务，还可以直接通过微信和酒店的24小时在线客服联系。">
+                                智能酒店系统以“效率、舒适和节能”为导向，通过整合酒店的照明系统、遮阳系统、影音系统、环境系统，实现...
+                           		</p>
+							</a>
+						</div>
+				 	</div>
+				  	<!-- Optional: clear the XS cols if their content doesn't match in height -->
+				 	<!--<div class="clearfix visible-xs-block"></div>-->
+				
+				 	<div class="col-lg-4 col-sm-6 caseHover">
+				 		<div class="caseBox">
+							<img src="img/case3.jpg" />
+							<a href=" " class="caseContent">
+								<h2 title="智能地产项目">
+									智能地产项目
+								</h2>
+								<p>
+									2019-01-11
+								</p>
+								<p title="地产宣传片房地产宣传片亦称房地产动画影片，根据项目市场定位，挖掘客户购房心理，利用虚拟现实技术，通过多媒体互动展示，直观、逼真地展现出项目建成后的完美景象。其主要的特点有：直接针对消费群体；突出品牌价值；内容丰富细致。数字沙盘利用影音互动为核心的多媒体查询系统，将动画、视频、三维全景、图像、音乐、文字等数字资源整合在一个交互式的整体中，通过触控一体机，实现多媒体展示、互动功能。形式新颖 手法新颖，">
+                                地产宣传片房地产宣传片亦称房地产动画影片，根据项目市场定位，挖掘客户购房心理，利用虚拟现实技术，通过...
+                          		</p>
+							</a>
+						</div>
+				 	</div>
+					<div class="col-lg-4 col-sm-6 caseHover">
+						<div class="caseBox">
+							<img src="img/case4.jpg" />
+							<a href=" " class="caseContent">
+								<h2 title="智能影院项目">
+									智能影院项目
+								</h2>
+								<p>
+									2019-01-11
+								</p>
+								<p title="在目前服务场景概念的大趋势下，观众从在第三方软件线上选择影院购票，到踏入影院大厅的第一步，直至观影结束回到家，整个流程体验中的每一个细节感受对一个影院的口碑塑造都是至关重要的，并将直接影响到影院的经营。影院的技术创新除了体现在影厅的硬件及观影效果提升上，线上\下购票、取票、检票、等候区互动娱乐、卖品衍生品购买等各类体验细分场景点所对应的相应技术革新缺一不可，全面落地“智慧影院”等一系列泛智能化影">
+	                                在目前服务场景概念的大趋势下，观众从在第三方软件线上选择影院购票，到踏入影院大厅的第一步，直至观影结...
+	                            </p>
+							</a>
+						</div>
+					</div>
+				 	<div class="col-lg-4 col-sm-6 caseHover">
+				 		<div class="caseBox">
+							<img src="img/case5.jpg" />
+							<a href=" " class="caseContent">
+								<h2 title="智能家居项目">
+									智能家居项目
+								</h2>
+								<p>
+									2019-01-11
+								</p>
+								<p title="智能家庭全宅智能系统为追求高品质生活的人士打造全宅智能控制系统，实现智能照明、智能安防、智能控制、影音娱乐四大系统的各种设备智能互联，让你尊享生活。智能家居（smart home, home automation）是以住宅为平台，利用综合布线技术、网络通信技术、&nbsp;安全防范技术、自动控制技术、音视频技术将家居生活有关的设施集成，构建高效的住宅设施与家庭日程事务的管理系统，提升家居安全性、便">
+	                                智能家庭全宅智能系统为追求高品质生活的人士打造全宅智能控制系统，实现智能照明、智能安防、智能控制、影...
+	                            </p>
+							</a>
+						</div>
+				 	</div>
+				 	<div class="col-lg-4 col-sm-6 caseHover">
+				 		<div class="caseBox">
+							<img src="img/case6.jpg" />
+							<a href=" " class="caseContent">
+								<h2 title="智能展馆项目">
+									智能展馆项目
+								</h2>
+								<p>
+									2019-01-11
+								</p>
+								<p title="传统实体博物馆因观念、技术、场地、展陈能力限制，以及有时出于对文物保护的考虑，所能展示、提供的文物信息量严重不足，大量的藏品没有机会展出（以故宫为例，每年展出的藏品仅占藏品总量的约5%），深藏馆中无人知晓。实体博物馆在时间、空间与展示形式上的内在局限性，制约了博物馆的社会教育和文化传播能力。数字博物馆的出现，突破了藏品展陈的时空限制，丰富了藏品展陈方式，扩展了展陈内容，但仍旧存在局限性。在实际操作">
+	                                传统实体博物馆因观念、技术、场地、展陈能力限制，以及有时出于对文物保护的考虑，所能展示、提供的文物信...
+	                            </p>
+							</a>
+						</div>
+				 	</div>	
+				</div>	
+				<div class="moretwo">
+					<div class="more">
+				 		<a title="查看更多" href="html/case.html">
+							查看更多&nbsp;&nbsp;&nbsp;|&nbsp;
+							<i class="glyphicon glyphicon-arrow-right moreIcon"></i>
+						</a>
+					</div>	
+				</div>
+			</div>
+		</div>
+		<!--产品代理-->
+		<div class="container-fluid listContent" id="produce">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 produceHeader">
+						<h3>产品代理</h3>
+						<a href="#" id="contactUsBox" title="联系我们">联系我们</a>
+					</div>
+					<div class="col-lg-12 timeLine">
+						<div class="demo"  id="build">
+							<div class="timeBox">
+								8/08 2008
+							</div>
+							<div class="contactBox">
+								<h3>公司成立</h3>
+								<p>
+									引进中国大陆第一套比利时巴萨（basalte）智能面板<br>
+									引进中国大陆第一块Divus墙装KNX触控屏<br>
+									签约德国iNELS长沙地区独家代理<br>
+								</p>
+							</div>
+						</div>
+						<div class="demo" id="get">
+							<div class="timeBox">
+								5/21 2012
+							</div>
+							<div class="contactBox">
+								<h3>不断集成</h3>
+								<p>
+									签约美国BitWise中控系统<br>
+									签约HDL智能控制系统<br>
+									签约德国ELKO EP电气集团中国区总代理及售后服务中心<br>
+									签约德国iNELS智能家居系统华中区总代理及技术服务中心<br>
+									签约德国DIVUS中国区总代理及技术<br>
+									获得Fibaro国家级别代理商<br>
+								</p>
+							</div>
+						</div>
+						<div class="demo" id="controlSys">
+							<div class="timeBox">
+								3/22 2016
+							</div>
+							<div class="contactBox">
+								<h3>Integrated Control System</h3>
+								<p>
+									中国智能家居产业联盟核心成员<br>
+									与西班牙Futurasmus KNX达成战略合作协议<br>
+									签约DAE客控系统及能源管理系统北方区总代理<br>
+									签约Thinknx中国区总代理及技术培训中心<br>
+									成为快CRESTRON核心代理商<br>
+								</p>
+							</div>
+						</div>
+						<div class="demo" id="alicloud">
+							<div class="timeBox">
+								3/22 2016
+							</div>
+							<div class="contactBox">
+								<h3>阿里云IoT</h3>
+								<p>
+									阿里云生态合作伙伴 阿里云第一批IoT智能人居认证SI
+									成为Enno北方区总代理
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--新闻资讯-->
+		<div class="container-fluid listContent" id="news">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-sm-6" class="newBox">
+						<div class="newsLeft">
+							<div class="title">
+								<h3>新闻资讯</h3>
+								<p>NEWS</p>
+							</div>
+							<div class="box_title">
+								在科技飞速发展的今天，智能行业的概念频频出现在各大媒介上，
+								进入公众的视线，随着人们越来越多的功能需求，智能行业在近几
+								年大放异彩，无限智居作为智能行业的领跑者，会陆续为大家带来
+								更多精彩的智能案例和有趣的智能资讯。					
+							</div>
+							<div class="moretwo">
+								<div class="more">
+							 		<a title="查看更多" href="html/newsList.html">
+										查看更多&nbsp;&nbsp;&nbsp;|&nbsp;
+										<i class="glyphicon glyphicon-arrow-right moreIcon"></i>
+									</a>
+								</div>	
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-sm-6" class="newBox">
+						<div class="newList">
+							<ul>
+								<li>
+									<a href="#">
+										<img src="img/new1.jpg" class="newsImg" />
+									</a>
+									<div class="newsContent">
+										<h3>
+											<a href="html/newsDetail.html" title="智能家居是什么，能带来哪些新的变化">
+												智能家居是什么，能带来哪些新的变化										
+											</a>
+										</h3>
+										<p>
+									    	时间文本：2019-01-11									
+										</p>
+										<div>								
+											科技改变世界，智能改变生活。近年来身边有越来越多的人开始关注智能家居起来了，但大多数都是听说，
+											并不了解智能家居是什么，能带来哪些新的变化，在这里小编从几个常见的场景给大家简单介绍下智能家居：　　
+											1.早晨，当您还在熟睡时，轻柔的音乐缓缓响起，卧室的窗帘准时自动拉开，温暖的阳光轻洒入室，呼唤你开
+											始新的一天。当你起床洗漱时，营养早餐已经做好，餐毕，音响自动关机，提醒您赶快上班。当你和家人外出旅游时，									
+										</div>										
+									</div>
+								</li>
+								<li>
+									<a href="#">
+										<img src="img/new2.jpg" class="newsImg" />
+									</a>
+									<div class="newsContent">
+										<h3>
+											<a href="#" title="智能家居是什么，能带来哪些新的变化">
+												智能家居是什么，能带来哪些新的变化										
+											</a>
+										</h3>
+										<p>
+									    	时间文本：2019-01-11									
+										</p>
+										<div>								
+											科技改变世界，智能改变生活。近年来身边有越来越多的人开始关注智能家居起来了，但大多数都是听说，
+											并不了解智能家居是什么，能带来哪些新的变化，在这里小编从几个常见的场景给大家简单介绍下智能家居：　　
+											1.早晨，当您还在熟睡时，轻柔的音乐缓缓响起，卧室的窗帘准时自动拉开，温暖的阳光轻洒入室，呼唤你开
+											始新的一天。当你起床洗漱时，营养早餐已经做好，餐毕，音响自动关机，提醒您赶快上班。当你和家人外出旅游时，									
+										</div>										
+									</div>
+								</li>
+								<li>
+									<a href="#">
+										<img src="img/new3.jpg" class="newsImg" />
+									</a>
+									<div class="newsContent">
+										<h3>
+											<a href="#" title="智能家居是什么，能带来哪些新的变化">
+												智能家居是什么，能带来哪些新的变化										
+											</a>
+										</h3>
+										<p>
+									    	时间文本：2019-01-11									
+										</p>
+										<div>								
+											科技改变世界，智能改变生活。近年来身边有越来越多的人开始关注智能家居起来了，但大多数都是听说，
+											并不了解智能家居是什么，能带来哪些新的变化，在这里小编从几个常见的场景给大家简单介绍下智能家居：　　
+											1.早晨，当您还在熟睡时，轻柔的音乐缓缓响起，卧室的窗帘准时自动拉开，温暖的阳光轻洒入室，呼唤你开
+											始新的一天。当你起床洗漱时，营养早餐已经做好，餐毕，音响自动关机，提醒您赶快上班。当你和家人外出旅游时，									
+										</div>										
+									</div>
+								</li>				
+							</ul>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<!--影院轮播-->
+		<div class="container listContent" id="filmSlider">
+			<div class="col-lg-12">
+				<div class="title">
+					<h3>智能影院</h3>
+					<p>Intelligent cinema</p>
+				</div>
+			</div>
+			<div id="carousel-example-generic2" class="carousel slide filmSlider" data-ride="carousel">
+			
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner filmContent" role="listbox">
+			    <div class="item active">
+			      <div class="itemImg">
+			      	 <img src="img/film1.jpg" title="私人影院">
+			      </div>				     
+			      <div class="film">
+			         	<h4>
+			         		<a href="#">客厅影院</a>
+			         	</h4>
+			         	<span class="box-hr"></span>
+			         	<p>
+			         		专业风格十足的私人影院也许并非所有人的梦想。在繁忙的工作之余，
+			         		与家人和朋友一起享受丰富多彩的私人影音娱乐生活可能更加符合我们的需求。和孩子一起欣赏动画大片
+			         		，一起享受电影带给我们的快乐与感动等等都是客厅
+			         	</p>
+			      </div>
+			    </div>
+			    <div class="item">
+			      <div class="itemImg">
+			    		<img src="img/film2.jpg" alt="">
+			      </div>			      
+			      <div class="film">
+			        	 <h4>
+			         		<a href="#">客厅影院</a>
+			         	</h4>
+			         	<span class="box-hr"></span>
+			         	<p>
+			         		用户可以亲历录音棚和电影院中的澎湃效果以及清晰明朗的对白和精
+			         		确的声音定位,从最轻柔的耳语到最惊心动魄的枪击、爆炸，每个声音
+			         		细节都仿佛身临其境，影音效果甚至超越商业电影院。...
+			         	</p>
+			      </div>
+			    </div>
+			   	<div class="item">
+			   	  <div class="itemImg">
+			        <img src="img/film3.jpg" alt="">
+			      </div>
+			      <div class="film">
+			         <h4>
+			         		<a href="#">多功能娱乐室</a>
+			         	</h4>
+			         	<span class="box-hr"></span>
+			         	<p>多功能娱乐室主要是为了满足多种娱乐需求，如欣赏电影大片、
+			         		唱卡拉OK、听高保真音乐、玩X-BOX游戏等。从设计声学装修来说，
+			         		因为专业私人影院的混响时间要求与专业卡拉OK娱乐的混响时间要求
+			         		相差一倍之多，所...
+			         	</p>
+			      </div>
+			    </div>
+				
+				  <!-- Controls -->
+				  <a class="left carousel-control " href="#carousel-example-generic2" role="button" data-slide="prev" id="filmBefore">
+				    <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right carousel-control filmIconBox" href="#carousel-example-generic2" role="button" data-slide="next" id="filmAfter">
+				    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				</div>
+			</div>
+			<div class="brandBox" id="brandAll">
+				<ul>
+					<li><img src="img/brand1.png"/></li>
+					<li><img src="img/brand2.png"/></li>
+					<li><img src="img/brand3.png"/></li>
+					<li><img src="img/brand4.png"/></li>
+					<li><img src="img/brand5.png"/></li>
+					<li><img src="img/brand6.png"/></li>
+					<li><img src="img/brand7.png"/></li>
+					<li><img src="img/brand8.png"/></li>
+				</ul>
+			</div>
+			<div class="moretwo">
+				<div class="more">
+			 		<a title="查看更多" href=" ">
+						查看详情&nbsp;&nbsp;&nbsp;|&nbsp;
+						<i class="glyphicon glyphicon-arrow-right moreIcon"></i>
+					</a>
+				</div>	
+			</div>
+		</div>
+		<!--背景图-->
+		<div class="bg">
+			<img src="img/bg1.jpg" id="bg1"/>
+			<img src="img/bg2.jpg" id="bg2" />
+			<img src="img/bg3.jpg" id="bg3" />
+		</div>
+		<!--联系我们-->
+		<section class="t listContent" id="footBox">
+			<div class="container">
+				<div class="box_title">
+					<div class="footHead text-center">
+						<h2>联系我们</h2>
+						<p>联系地址</p>
+					</div>
+				</div>
+				<div class="footContent">
+					<div class="col-md-8 col-sm-12 footBox">
+						<div class="form-group">
+							<input type="text" name="userName" placeholder="姓名" class="inoutBox"/>
+						</div>
+						<div class="form-group">
+							<input type="tel" name="tel" placeholder="电话 " class="inoutBox"/>
+						</div>
+						<div class="form-group">
+							<input type="text" name="address" placeholder="地址" class="inoutBox"/>
+						</div>
+						<div class="form-group">
+							<input type="email" name="mail" placeholder="邮箱 " class="inoutBox"/>
+						</div>
+						<div class="form-group textAreaBox">
+							<textarea placeholder="详情" rows="5" class="inoutBox"></textarea>
+						</div>
+						<div class="input-group form-group">
+							<input type="text" name="code" placeholder="验证码"  class="inoutBox codeInput" required="" data-fv-message="不能为空" data-fv-field="code"/>
+							<span class="input-group-addon" id="codeImg">
+								<img src="img/code1.jpg" />
+							</span>
+						</div>
+						<div class="form-group">
+							<button type="submit" class="btn btn-lg btn-block btn-squared disabled" disabled="disabled">提交</button>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-12 footBox">
+						<div class="footImg">
+							<img src="img/logo.png" />
+						</div>
+						<div class="footTel">
+							<span>免费服务热线：</span>
+							<a href="tel:0731-00000000">0731-00000000</a>
+							<p>无限智居人居</p>
+							<p id="more-info">智能彰显艺术，创意驱动生活</p>
+						</div>				
+					</div>
+				</div>
+				<div class="col-md-12 link">
+					<ul>
+						<li>友情链接：</li>
+						<li class="afterLine">
+							<a href="#"><img src="img/brand1.png"/></a>
+						</li>
+						<li class="afterLine">
+							<a href="#"><img src="img/brand2.png"/></a>
+						</li>
+						<li class="afterLine">
+							<a href="#"><img src="img/brand3.png"/></a>
+						</li>
+						<li class="afterLine">
+							<a href="#"><img src="img/brand4.png"/></a>
+						</li>
+						<li class="afterLine">
+							<a href="#"><img src="img/brand5.png"/></a>
+						</li>
+						<li class="afterLine">
+							<a href="#"><img src="img/brand6.png"/></a>
+						</li>
+						<li class="afterLine">
+							<a href="#"><img src="img/brand7.png"/></a>
+						</li>
+						<li class="afterLine">
+							<a href="#"><img src="img/brand8.png"/></a>
+						</li>
+					</ul>
+				</div>				
+			</div>
+		</section>		
+		<footer class="t footBigBox">
+			<div class="container text-center footC">
+				<span>我的网站 版权所有 2008-2019 湘ICP备8888888<br></span>
+				<span>如有涉及侵犯版权，请联系我们提供书面反馈，我们核实后会立即删除。<br></span>
+				<span class="powered_by_metinfo">Powered by <b><a href="#" target="_blank" title="CMS">MetInfo 6.2.0</a></b> ©2008-2019 &nbsp;<a href="#" target="_blank" title="touchMe">liaoshi.cn</a></span>
+			</div>
+		</footer>
+		<!--吸底，移动端-->
+		<div class="t main">
+			<div class="bottomBox">
+				<i class="glyphicon glyphicon-phone-alt"></i>
+				<p>电话中心</p>
+			</div>
+			<div class="bottomBox">
+				<i class="glyphicon glyphicon-asterisk"></i>
+				<p>产品中心</p>
+			</div>
+			<div class="bottomBox">
+				<i class="glyphicon glyphicon-edit"></i>
+				<p>在线咨询</p>
+			</div>
+			<div class="bottomBox">
+				<i class="glyphicon glyphicon-phone"></i>
+				<p>QQ客服</p>
+			</div>
+		</div>
+		<!--回到顶部-->
+		<div class="srollTop">
+			<i class="glyphicon glyphicon-arrow-up"></i>
+		</div>
+	</body>
+</html>

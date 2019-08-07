@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>控制系统</title>
+		<link rel="stylesheet" href="../css/bootstrap.css" />
+		<link rel="stylesheet" href="../css/index.css" />
+		<link rel="stylesheet" href="../css/newList.css" />
+		<link rel="stylesheet" href="../css/newsDetail.css" />
+		<link rel="stylesheet" href="../css/controlSys.css" />
+		<link href="../img/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+		<script type="text/javascript" src="../js/jquery.min.js" ></script>
+		<script type="text/javascript" src="../js/bootstrap.js" ></script>
+		<script type="text/javascript" src="../js/index.js" ></script>
+		<script type="text/javascript" src="../js/newsList.js" ></script>
+		<script type="text/javascript" src="../js/controlSys.js" ></script>
+	</head>
+	<body>
+		<!--导航条-->
+		<!--<nav class="navbar navbar-inverse navbar-fixed-top one">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#"><img src="../img/logo.png" class="img-responsive"></a>
+		    </div>
+		    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav own" id="controlNavUl">
+		        <li class="navLi2">中央控制系统</li>
+		        <li class="navLi2">灯光控制系统</li>
+		        <li class="navLi2">环境控制系统</li>
+		        <li class="navLi2">安防控制系统</li>
+		        <li>
+		        	<a>		
+		        		<div id="moreOne">
+			        		<span>- ——</span>
+			        		<br />
+			        		<span>——</span>
+		        		</div>	
+		        		<div id="close" >
+		        			<span >x</span>
+		        		</div>
+		        	</a>
+		        </li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>	-->
+		<nav class="navbar navbar-inverse navbar-fixed-top one">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header change">
+		      <button type="button" class="navbar-toggle collapsed " id="moreBtn" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand brandBox" id="brang1" href="#"><img src="../img/logo.png" class="img-responsive"></a>
+		    </div>
+		    <div class="collapse navbar-collapse navbar-right hid" id="bs-example-navbar-collapse-1">
+		   	  <a class="navbar-brand brandBox" href="#" id="brang2"><img src="../img/logo.png" class="img-responsive"></a>
+		      <ul class="nav navbar-nav own" id="navUl">
+		        <li><a class="navLi2">中央控制系统 <span class="sr-only">(current)</span></a></li>
+		        <li><a class="navLi2" id="hoverColor">灯光控制系统</a></li>
+		        <li><a class="navLi2">中央控制系统</a></li>
+		        <li><a class="navLi2">环境控制系统</a></li>
+		        <li>
+		        	<a id="allMore">		
+		        		<div id="moreOne">
+			        		<span>- ——</span>
+			        		<br />
+			        		<span>——</span>
+		        		</div>	
+		        		<div id="close" >
+		        			<span >x</span>
+		        		</div>
+		        	</a>
+		        </li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+
+			<!--more-->
+		<div class="navSecond">
+			<div class="navBoxL">
+				<div class="box01">
+					<div class="box01Content">
+						<div id="box010Content">
+							<p><a href="#">中央控制系统</a></p>
+							<p><a href="#">中央控制系统</a></p>
+							<p><a href="#">中央控制系统</a></p>
+							<p><a href="#">中央控制系统</a></p>
+							<p><a href="#">......</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="box02">
+					<img src="../img/we.jpg" />
+					<a href="#">走进我们</a>
+				</div>
+				<div class="box03">
+					<div class="box030">
+						<div class="box030Content">
+							<p>————— CASE</p>
+							<a href="#">
+								<span class="caseFont">案例展示</span>
+								<br />
+								<span class="caseFont">以智能创新设计为驱动力</span>
+								<p><i id="caseIcon" class="glyphicon glyphicon-arrow-right"></i></p>
+							</a>
+						</div>						
+					</div>
+				</div>
+				<div class="box04">
+					<div class="box04Content">
+						<div id="box04Content0">
+							<p>智能彰显艺术</p>
+							<p>Intelligent Display Art</p>
+							<p>创新驱动生活</p>
+							<p>Creativity Drives Life</p>
+						</div>
+					</div>
+				</div>
+			</div>		
+			<div class="navBox">
+				<div class="box">
+					<ul class="nav" >
+						<li ><a href="../index.html" id="navBoxUl">网站首页</a></li>
+						<li><a href="produce.html">关于我们</a></li>
+						<li><a href="controlSys.html">智能系统</a></li>
+						<li><a href="case.html">项目案例</a></li>
+						<li><a href="newsList.html">新闻资讯</a></li>
+						<li><a href="#">智能影院</a></li>
+						<li><a href="#">联系我们</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<section>
+			<!--开始-->
+			<div class="bigImg">
+				<img src="../img/newBig.jpg" />
+			</div>
+			<!--产品中心-->
+			<div class="container-fluid newsNav">
+				<div class="container">
+					<div class="newTitle">
+						产品中心
+					</div>				
+					<div class="navList">
+						<ul>
+							<li class="col-xs-3 navLi "><a href="#" title="关于我们">中央控制系统</a></li>
+							<li class="col-xs-3 navLi"><a href="#" title="联系我们">灯光控制系统</a></li>
+							<li class="col-xs-3 navLi"><a href="#" title="关于我们" >环境控制系统</a></li>
+							<li class="col-xs-3 navLi"><a href="#" title="联系我们">安防控制系统</a></li>							
+						</ul>
+					</div>	
+				</div>
+			</div>
+			<div class="container-fluid contentBox">
+				<div class="container" id="controlC">
+					<div class="row" id="current">
+						<div class="col-xs-12 control1">
+							<img src="../img/control_center.jpg"/>
+						</div>
+						<div class="col-xs-12">
+							<p>
+								项目中选用Crestron和苹果HomeKit智能家居中央控制系统，通过触摸屏、智能面板等对智能家居生活中的灯光照明，电动窗帘，环境控制，安防控制等设备有机融为一体，
+								统一控制、简单、方便、快捷的对家居中的各种设备进行控制。
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 control1">
+							<img src="../img/control_light.jpg"/>
+						</div>
+						<div class="col-xs-12">
+							<p>
+								我们可以为每一个环境做不同的灯光控制，使整个区域呈现出符合环境氛围的光线，在不同的场景模式中，利用光学的特性，给环境带来丰富的变化
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 control1">
+							<img src="../img/control_environment.jpg"/>
+						</div>
+						<div class="col-xs-12">
+							<p>
+								已提高家居环境的舒适度，PM2.5等实时监控，利用新风设备，在不开窗的情况下可实现对空气的净化，让你每天都有新鲜空气。
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 control1">
+							<img src="../img/control_safe.jpg"/>
+						</div>
+						<div class="col-xs-12">
+							<p>
+								系统设置了紧急求助按钮，安装在人房和卫生间内，当家里有老人，小孩遇到危险时，可以触发紧急按钮告知家里人采取措施。
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--联系我们-->
+		<section class="t listContent" id="footBox">
+			<div class="container">
+				<div class="box_title">
+					<div class="footHead text-center">
+						<h2>联系我们</h2>
+						<p>联系地址</p>
+					</div>
+				</div>
+				<div class="footContent">
+					<div class="col-md-8 col-sm-12 footBox">
+						<div class="form-group">
+							<input type="text" name="userName" placeholder="姓名" class="inoutBox"/>
+						</div>
+						<div class="form-group">
+							<input type="tel" name="tel" placeholder="电话 " class="inoutBox"/>
+						</div>
+						<div class="form-group">
+							<input type="text" name="address" placeholder="地址" class="inoutBox"/>
+						</div>
+						<div class="form-group">
+							<input type="email" name="mail" placeholder="邮箱 " class="inoutBox"/>
+						</div>
+						<div class="form-group textAreaBox">
+							<textarea placeholder="详情" rows="5" class="inoutBox"></textarea>
+						</div>
+						<div class="input-group form-group">
+							<input type="text" name="code" placeholder="验证码"  class="inoutBox codeInput" required="" data-fv-message="不能为空" data-fv-field="code"/>
+							<span class="input-group-addon" id="codeImg">
+								<img src="../img/code1.jpg" />
+							</span>
+						</div>
+						<div class="form-group">
+							<button type="submit" class="btn btn-lg btn-block btn-squared disabled" disabled="disabled">提交</button>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-12 footBox">
+						<div class="footImg">
+							<img src="../img/logo.png" />
+						</div>
+						<div class="footTel">
+							<span>免费服务热线：</span>
+							<a href="tel:0731-00000000">0731-00000000</a>
+							<p>无限智居人居</p>
+							<p id="more-info">智能彰显艺术，创意驱动生活</p>
+						</div>				
+					</div>
+				</div>
+				<div class="col-md-12 link">
+					<ul>
+						<li>友情链接：</li>
+						<li class="afterLine">
+							<a href="#"><img src="../img/brand1.png"/></a>
+						</li>
+						<li class="afterLine">
+							<a href="#"><img src="../img/brand2.png"/></a>
+						</li>
+						<li class="afterLine">
+							<a href="#"><img src="../img/brand3.png"/></a>
+						</li>
+						<li class="afterLine">
+							<a href="#"><img src="../img/brand4.png"/></a>
+						</li>
+						<li class="afterLine">
+							<a href="#"><img src="../img/brand5.png"/></a>
+						</li>
+						<li class="afterLine">
+							<a href="#"><img src="../img/brand6.png"/></a>
+						</li>
+						<li class="afterLine">
+							<a href="#"><img src="../img/brand7.png"/></a>
+						</li>
+						<li class="afterLine">
+							<a href="#"><img src="../img/brand8.png"/></a>
+						</li>
+					</ul>
+				</div>				
+			</div>
+		</section>		
+		<footer class="t footBigBox">
+			<div class="container text-center footC">
+				<span>我的网站 版权所有 2008-2019 湘ICP备8888888<br></span>
+				<span>如有涉及侵犯版权，请联系我们提供书面反馈，我们核实后会立即删除。<br></span>
+				<span class="powered_by_metinfo">Powered by <b><a href="#" target="_blank" title="CMS">MetInfo 6.2.0</a></b> ©2008-2019 &nbsp;<a href="#" target="_blank" title="touchMe">liaoshi.cn</a></span>
+			</div>
+		</footer>
+		<!--吸底，移动端-->
+		<div class="t main">
+			<div class="bottomBox">
+				<i class="glyphicon glyphicon-phone-alt"></i>
+				<p>电话中心</p>
+			</div>
+			<div class="bottomBox">
+				<i class="glyphicon glyphicon-asterisk"></i>
+				<p>产品中心</p>
+			</div>
+			<div class="bottomBox">
+				<i class="glyphicon glyphicon-edit"></i>
+				<p>在线咨询</p>
+			</div>
+			<div class="bottomBox">
+				<i class="glyphicon glyphicon-phone"></i>
+				<p>QQ客服</p>
+			</div>
+		</div>
+		<!--回到顶部-->
+		<div class="srollTop">
+			<i class="glyphicon glyphicon-arrow-up"></i>
+		</div>
+	</body>
+</html>
